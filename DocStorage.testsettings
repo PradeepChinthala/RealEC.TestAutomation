@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSettings name="DocStorage" id="63c76ba3-0614-43dd-b86e-d08befdce486" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Description>These are default test settings for a DocStorage local test run.</Description>
+  <Deployment>
+    <DeploymentItem filename="TestDocStorage\SharedParameters\" />
+    <DeploymentItem filename="RealEC.Sikuli\LenderProviderPages\" />
+    <DeploymentItem filename="RealECSelenium\BrowserDrivers\" />
+    <DeploymentItem filename="SharedParameters\ProjectSpecific\" />
+    <DeploymentItem filename="RealEC.TestAutomation\log4net.config" />
+    <DeploymentItem filename="SharedParameters\Products\" />
+    <DeploymentItem filename="RealEC.Sikuli\sikulirestapi-1.0.jar" />
+    <DeploymentItem filename="BrowserDrivers\" />
+    <DeploymentItem filename="AutoItX3.dll" />
+    <DeploymentItem filename="packages\AutoIT\AutoItX3.dll" />
+    <DeploymentItem filename="SharedParameters\Common\" />
+    <DeploymentItem filename="SharedParameters\Other\" />
+    <DeploymentItem filename="log4net.config" />
+    <DeploymentItem filename="ExternalLibraries\AutoItX3.dll" />
+  </Deployment>
+  <Execution>
+    <Timeouts runTimeout="900000" testTimeout="900000" />
+    <TestTypeSpecific>
+      <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+        <AssemblyResolution>
+          <TestDirectory useLoadContext="true" />
+        </AssemblyResolution>
+      </UnitTestRunConfig>
+    </TestTypeSpecific>
+    <AgentRule name="Execution Agents">
+    </AgentRule>
+  </Execution>
+  <Properties />
+</TestSettings>

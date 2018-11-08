@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSettings name="PUI" id="7f5419f3-4d73-4964-a762-f8a2b7223da1" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Description>These are default test settings for a local test run.</Description>
+  <Deployment>
+    <DeploymentItem filename="RealECSelenium\BrowserDrivers\" />
+    <DeploymentItem filename="CommonParameter\SharedParameters\Common\" />
+    <DeploymentItem filename="CommonParameter\SharedParameters\Products\" />
+    <DeploymentItem filename="SharedParameters\Common\" />
+    <DeploymentItem filename="log4net.config" />
+    <DeploymentItem filename="AutoItX3.dll" />
+    <DeploymentItem filename="PUI\SharedParameters\ProjectSpecific\" />
+    <DeploymentItem filename="RealEC.TestAutomation\log4net.config" />
+    <DeploymentItem filename="SharedParameters\ProjectSpecific\" />
+    <DeploymentItem filename="ExternalLibraries\AutoItX3.dll" />
+    <DeploymentItem filename="SharedParameters\Other\" />
+    <DeploymentItem filename="BrowserDrivers\" />
+    <DeploymentItem filename="CommonParameter\SharedParameters\Other\" />
+    <DeploymentItem filename="SharedParameters\Products\" />
+    <DeploymentItem filename="RealEC.Sikuli\LenderProviderPages\" />
+    <DeploymentItem filename="RealEC.Sikuli\sikulirestapi-1.0.jar" />
+    <DeploymentItem filename="packages\AutoIT\AutoItX3.dll" />
+  </Deployment>
+  <Execution>
+    <TestTypeSpecific>
+      <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+        <AssemblyResolution>
+          <TestDirectory useLoadContext="true" />
+        </AssemblyResolution>
+      </UnitTestRunConfig>
+      <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+        <Browser name="Internet Explorer 9.0" MaxConnections="6">
+          <Headers>
+            <Header name="User-Agent" value="Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)" />
+            <Header name="Accept" value="*/*" />
+            <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+            <Header name="Accept-Encoding" value="GZIP" />
+          </Headers>
+        </Browser>
+      </WebTestRunConfiguration>
+    </TestTypeSpecific>
+    <AgentRule name="LocalMachineDefaultRole">
+    </AgentRule>
+  </Execution>
+  <Properties />
+</TestSettings>
